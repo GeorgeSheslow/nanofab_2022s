@@ -1,0 +1,10 @@
+Putting a low pass filter over an image
+
+1. open original image in J Image
+2. create new blank image same size as original image
+3. under FFT click: Make circular selection
+4. add circular radius, click ok
+5. right click circular section and press: create mask
+6. Use this image with the orignal image in the function: Image Calculator
+7. In image calculator select math function ADD
+
