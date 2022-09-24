@@ -44,8 +44,8 @@ s.EdgeColor = 'none';
 hold on
 xlabel('Energy (eV)')
 ylabel('Beam Energy (keV)');
-zlabel('Energy');
-title('CL Spectra');
+zlabel('CL Intensity (a.u.)');
+title('Depth profile via Cathodoluminescence of GaN Sample','FontSize',16);
 
 %% Peak Finding
 % mask = imregionalmax(z_plot);
@@ -78,8 +78,9 @@ peak_5 = [745.680883600000,1190.68399900000,1589.27908800000,2102.00301300000,26
 plot(energy,peak_5);
 
 legend('YL (2.2eV)','QW2 (2.5eV)','QW1 (2.635eV)','BL (2.8eV)','NBE (3.385eV)','Location', 'NorthWest');
-title('Depth Profile')
-
+title('GaN Sample Depth Profile','FontSize',16)
+xlabel('Beam Energy (keV)');
+ylabel('CL Intensity (a.u.)');
 
 %% Guassian Curve Fitting
 
